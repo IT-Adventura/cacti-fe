@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
-import { Header } from "~/widgets/header";
+import { Header } from '~/widgets/header';
 
 export const metadata: Metadata = {
-  title: "LikeCactus",
+  title: 'LikeCactus',
 };
 
 export default function RootLayout({
