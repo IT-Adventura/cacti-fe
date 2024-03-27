@@ -45,6 +45,7 @@ const config: Config = {
         accent: {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
+          darker: 'hsl(var(--accent-darker))',
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
@@ -53,6 +54,7 @@ const config: Config = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
+          darker: 'hsl(var(--card-darker))',
         },
       },
       borderRadius: {
