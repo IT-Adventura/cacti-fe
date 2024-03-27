@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Roboto as FontSans, Lora as FontSerif } from 'next/font/google';
 import './globals.css';
 
+import { Footer } from '~/widgets/footer';
 import { Header } from '~/widgets/header';
 import { cn } from '~/shared/lib';
 
@@ -29,13 +30,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen font-sans antialiased',
+          'flex min-h-screen flex-col font-sans antialiased',
           fontSans.variable,
           fontSerif.variable,
         )}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
