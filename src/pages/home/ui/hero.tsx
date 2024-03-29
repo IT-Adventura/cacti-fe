@@ -66,14 +66,14 @@ export const Hero = () => {
             <img {...rest} style={{ width: '100%', height: 'auto' }} />
           </picture>
 
-          <div className='absolute inset-x-0 top-[11.875rem] px-4 md:top-[11.625rem] md:pl-8 md:pr-[9.125rem] lg:px-[6.25rem] xl:pr-[22.375rem] 2xl:pl-[9.75rem] 2xl:pr-[28.875rem]'>
-            <h1 className='mb-[1.875rem] font-serif text-[2.875rem]/[3.68rem] font-medium md:text-[5rem]/[6.4rem]'>
+          <div className='absolute inset-x-0 top-[11.875rem] px-14 md:top-[11.625rem] md:pl-8 md:pr-[9.125rem] lg:px-[6.25rem] xl:pr-[22.375rem] 2xl:pl-[9.75rem] 2xl:pr-[28.875rem]'>
+            <h1 className='mb-[1.625rem] font-serif text-[2.875rem]/[3.75rem] font-medium md:text-[5rem]/[6.4rem]'>
               Сacti for good mood and good atmosphere
             </h1>
             <p className='mb-[3.75rem] text-xl/[1.465rem]'>
               Welcome to our store, we are always glad to see you in our store!
             </p>
-            <Button className='h-auto px-[1.8125rem] py-3 text-2xl/[1.7581rem]'>
+            <Button className='h-auto px-8 py-3 text-2xl/[1.7581rem]'>
               Consultation
             </Button>
           </div>
