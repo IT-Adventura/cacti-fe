@@ -1,70 +1,24 @@
-import { getImageProps } from 'next/image';
+import { hero } from '~/shared/ui/assets';
 import { Button } from '~/shared/ui/button';
+import { Picture } from '~/shared/ui/picture';
 
 export const Hero = () => {
-  const common = { alt: 'Hero image', sizes: '100vw' };
-
-  const {
-    props: { srcSet: screen2XL },
-  } = getImageProps({
-    ...common,
-    width: 1440,
-    height: 900,
-    quality: 80,
-    src: '/images/hero/hero-bg-1440.jpg',
-  });
-
-  const {
-    props: { srcSet: screenXL },
-  } = getImageProps({
-    ...common,
-    width: 1280,
-    height: 720,
-    quality: 80,
-    src: '/images/hero/hero-bg-1280.jpg',
-  });
-
-  const {
-    props: { srcSet: screenLG },
-  } = getImageProps({
-    ...common,
-    width: 1024,
-    height: 768,
-    quality: 80,
-    src: '/images/hero/hero-bg-1024.jpg',
-  });
-
-  const {
-    props: { srcSet: screenMD },
-  } = getImageProps({
-    ...common,
-    width: 768,
-    height: 1024,
-    quality: 80,
-    src: '/images/hero/hero-bg-768.jpg',
-  });
-
-  const {
-    props: { srcSet: screenSM, ...rest },
-  } = getImageProps({
-    ...common,
-    width: 376,
-    height: 816,
-    quality: 70,
-    src: '/images/hero/hero-bg-376.jpg',
-  });
-
   return (
     <section>
       <div className='container px-0'>
         <div className='relative text-center md:text-left'>
-          <picture>
-            <source media='(min-width: 1440px)' srcSet={screen2XL} />
-            <source media='(min-width: 1280px)' srcSet={screenXL} />
-            <source media='(min-width: 1024px)' srcSet={screenLG} />
-            <source media='(min-width: 768px)' srcSet={screenMD} />
-            <img {...rest} style={{ width: '100%', height: 'auto' }} />
-          </picture>
+          <Picture
+            className='h-auto w-full'
+            src={hero.w376}
+            alt='Hero Image'
+            sizes='100vw'
+            sources={{
+              '(min-width: 1440px)': hero.w1440,
+              '(min-width: 1280px)': hero.w1280,
+              '(min-width: 1024px)': hero.w1024,
+              '(min-width: 768px)': hero.w768,
+            }}
+          />
 
           <div className='absolute inset-x-0 top-[11.875rem] px-14 md:top-[11.625rem] md:pl-8 md:pr-[9.125rem] lg:px-[6.25rem] xl:pr-[22.375rem] 2xl:pl-[9.75rem] 2xl:pr-[28.875rem]'>
             <h1 className='mb-[1.625rem] font-serif text-[2.875rem]/[3.75rem] font-medium md:text-[5rem]/[6.4rem]'>
