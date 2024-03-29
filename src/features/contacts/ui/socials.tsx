@@ -15,36 +15,36 @@ const Socials = React.forwardRef<HTMLUListElement, SocialsProps>(
       >
         <li>
           <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://www.facebook.com/'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <FaFacebookF size={24} />
           </a>
         </li>
         <li>
           <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://twitter.com/'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <FaTwitter size={24} />
           </a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://www.linkedin.com/'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <FaLinkedinIn size={24} />
           </a>
         </li>
         <li>
           <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://www.instagram.com/'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <RiInstagramFill size={24} />
           </a>
