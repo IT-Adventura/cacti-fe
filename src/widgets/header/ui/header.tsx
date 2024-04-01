@@ -30,8 +30,8 @@ export const Header = () => {
             </div>
 
             <div className='hidden xl:flex xl:items-center xl:gap-2'>
-              <LogIn className='transition-colors hover:text-black' />
-              <ShoppingBasket className='transition-colors hover:text-black' />
+              <LogIn className='cursor-pointer transition-colors hover:text-black' />
+              <ShoppingBasket className='cursor-pointer transition-colors hover:text-black' />
             </div>
           </div>
         </div>
