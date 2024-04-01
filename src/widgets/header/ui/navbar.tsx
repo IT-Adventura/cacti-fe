@@ -19,14 +19,16 @@ export const Navbar = () => {
           const isActive = path === link.path;
 
           return (
-            <li
-              key={link.label}
-              className={cn(
-                'px-6 py-2 text-[22px]/6 uppercase tracking-[1%] text-foreground/90 transition-colors duration-300 hover:bg-[#232B2D]',
-                isActive && 'bg-[#232B2D] text-input/90',
-              )}
-            >
-              <Link href={link.path}>{link.label}</Link>
+            <li key={link.label}>
+              <Link
+                href={link.path}
+                className={cn(
+                  'inline-block px-6 py-2 text-[22px]/6 uppercase tracking-[1%] text-foreground/90 transition-colors duration-300 hover:bg-[#232B2D]',
+                  isActive && 'bg-[#232B2D] text-input/90',
+                )}
+              >
+                {link.label}
+              </Link>
             </li>
           );
         })}
