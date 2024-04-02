@@ -1,10 +1,9 @@
-import { LogIn, ShoppingBasket } from 'lucide-react';
 import Link from 'next/link';
-import { Logo } from '~/shared/ui/assets';
-import { LogoBig } from '~/shared/ui/assets';
+import { LuLogIn, LuShoppingBasket } from 'react-icons/lu';
+import { Search } from '~/features/search';
+import { Logo, LogoBig } from '~/shared/ui/assets';
 import { BurgerMenu } from './burger-menu';
 import { Navbar } from './navbar';
-import { SearchBar } from './search-bar';
 
 export const Header = () => {
   return (
@@ -17,7 +16,7 @@ export const Header = () => {
               <LogoBig className='hidden md:block' />
             </Link>
             <div className='xl:hidden'>
-              <SearchBar />
+              <Search />
             </div>
             <Navbar />
           </div>
@@ -26,12 +25,12 @@ export const Header = () => {
             <BurgerMenu />
 
             <div className='hidden xl:block'>
-              <SearchBar />
+              <Search />
             </div>
 
             <div className='hidden xl:flex xl:items-center xl:gap-2'>
-              <LogIn className='cursor-pointer transition-colors hover:text-black' />
-              <ShoppingBasket className='cursor-pointer transition-colors hover:text-black' />
+              <LuLogIn className='size-6 cursor-pointer transition-colors hover:text-black' />
+              <LuShoppingBasket className='size-6 cursor-pointer transition-colors hover:text-black' />
             </div>
           </div>
         </div>
