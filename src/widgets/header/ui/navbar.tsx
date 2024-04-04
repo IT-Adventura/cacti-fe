@@ -1,13 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { NAV_LINKS } from '~/shared/config/links.config';
 import { cn } from '~/shared/lib';
-
-const links = [
-  { label: 'Store', path: '/store' },
-  { label: 'News', path: '/news' },
-  { label: 'Contact', path: '/contact' },
-] as const;
 
 export const Navbar = () => {
   const path = usePathname();
@@ -15,7 +10,7 @@ export const Navbar = () => {
   return (
     <nav className='hidden xl:block'>
       <ul className='flex items-center overflow-hidden rounded-[0.5rem] bg-card/90'>
-        {links.map((link) => {
+        {NAV_LINKS.map((link) => {
           const isActive = path === link.path;
 
           return (

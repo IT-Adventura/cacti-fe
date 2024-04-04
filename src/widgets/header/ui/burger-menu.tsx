@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { LuAlignJustify, LuX } from 'react-icons/lu';
 import { Contacts } from '~/features/contacts';
+import { NAV_LINKS } from '~/shared/config/links.config';
 import { LogoBig } from '~/shared/ui/assets';
 import {
   Sheet,
@@ -9,12 +10,6 @@ import {
   SheetContent,
   SheetTrigger,
 } from '~/shared/ui/sheet';
-
-const links = [
-  { label: 'Store', path: '/store' },
-  { label: 'News', path: '/news' },
-  { label: 'Contact', path: '/contact' },
-] as const;
 
 export const BurgerMenu = () => {
   return (
@@ -43,7 +38,7 @@ export const BurgerMenu = () => {
           </div>
 
           <ul className='flex flex-col gap-5'>
-            {links.map((link) => {
+            {NAV_LINKS.map((link) => {
               return (
                 <li
                   key={link.label}
