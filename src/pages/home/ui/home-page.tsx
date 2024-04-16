@@ -3,7 +3,7 @@ import { Hero } from './hero';
 export const HomePage = () => {
   return (
     <main>
-      <Hero />
+      <Hero /> 
     </main>
   );
 };
