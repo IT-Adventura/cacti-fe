@@ -6,8 +6,7 @@ const Cards = () => {
       <div>
           {/* Photo container */}
           <div>
-              <Image src="cacti-fe\src\shared\ui\assets\images\cards\store-cactus-344-1.png" alt="Cacti" />
-            
+              {/* <Image src="cacti-fe\src\shared\ui\assets\images\cards\store-cactus-344-1.png" alt="Cacti" /> */}
           </div>
           <div>
               <h2>Fairy Castle Cactus</h2>

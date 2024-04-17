@@ -1,2 +1,1 @@
-import Cards from "./ui/cards";
-
+export {Cards} from "./ui";
