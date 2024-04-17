@@ -1,5 +1,5 @@
-import { Hero } from './hero';
 import { Cards } from '~/widgets/cards';
+import { Hero } from './hero';
 
 export const HomePage = () => {
   return (
